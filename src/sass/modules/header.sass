@@ -1,0 +1,66 @@
+.header
+  padding: 15px 0px 17px 0px
+  &__container
+    display: flex
+    align-items: center
+  &__language
+    &:not(:first-child)
+      margin: 0px 0px 0px 75px
+  &__nav
+    margin: 0px 0px 0px auto
+
+.logo
+  display: flex
+  align-items: center
+  &__image
+    height: 18px
+    width: 33px
+    &:not(:last-child)
+      margin: 0px 10px 0px 0px
+  &__text
+    font-family: $satoshi
+    font-weight: 700
+    font-size: 20px
+    line-height: 27 / 20 * 100%
+    color: $blue
+
+.nav
+  &__list
+    list-style: none
+    display: flex
+    & > *:not(:last-child)
+      margin: 0px 60px 0px 0px
+  &__item
+    &._is-active
+      border-bottom: 2px solid $orange
+  &__link
+    font-weight: 400
+    font-size: 14px
+    line-height: 16 / 14 * 100%
+.language
+  cursor: pointer
+  background-color: $blue
+  min-height: 30px
+  padding: 0px 21px 0px 17px
+  border-radius: 20px
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+  &__current
+    display: flex
+    align-items: center
+    &-icon
+      width: 16px
+      height: 16px
+      margin: 0px 5px 0px 0px
+      svg
+        fill: #ffffff
+    &-name
+      color: #ffffff
+      font-weight: 400
+      font-size: 14px
+      line-height: 16 / 14 * 100%
+    &-arrow
+      svg
+        fill: #ffffff

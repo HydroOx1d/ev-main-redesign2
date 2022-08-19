@@ -1,0 +1,60 @@
+.ecosystem
+  padding: 100px 0px
+  &__inner
+    max-width: 1135px
+    display: flex
+    align-items: flex-start
+  &__image
+    flex: 0 0 675px
+    padding: 0px 0px 42% 0px
+    overflow: hidden
+    border-radius: 4px
+    &:not(:last-child) 
+      margin: 0px 60px 0px 0px
+  &__content
+    flex: 1 1 auto
+
+  &__sup-title
+    font-weight: 700
+    font-size: 16px
+    line-height: 20 / 16 * 100%
+    color: $blue
+    &:not(:last-child)
+      margin: 0px 0px 10px 0px
+  &__title
+    font-weight: 700
+    font-size: 24px
+    line-height: 32 / 24 * 100%
+    &:not(:last-child)
+      margin: 0px 0px 15px 0px
+  &__desc
+    font-family: $helvetica
+    font-weight: 400
+    font-size: 14px
+    line-height: 16 / 14 * 100%
+    color: $gray
+    &:not(:last-child)
+      margin: 0px 0px 20px 0px
+  
+.chronology
+  display: grid
+  grid-template-columns: repeat(2, 1fr)
+  gap: 20px
+  &__block
+    background-color: $bgColor
+    padding: 10px 20px 20px 20px
+    min-height: 130px
+    border-radius: 4px
+  &__year
+    font-weight: 700
+    font-size: 36px
+    line-height: 48 / 36 * 100%
+    color: $gray
+    &:not(:last-child)
+      margin: 0px 0px 5px 0px
+  &__desc
+    font-family: $helvetica
+    font-weight: 400
+    font-size: 14px
+    line-height: 16 / 14 * 100%
+    color: $gray

@@ -1,12 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('./html/head.html', {
-  "title": 'Главная'
+"title": 'Главная'
 })
+
 <body>
   <div class="wrapper">
-    Hello, GULP!
+    @@include('./html/header.html', {
+    "index": "1"
+    })
+    <main class="page">
+      <!-- Present -->
+      @@include('./html/present.html', {})
+      <!-- Ecosystem -->
+      @@include('./html/ecosystem.html', {})
+      <!-- Projects -->
+      @@include('./html/projects.html', {})
+      <!-- Documents -->
+      @@include('./html/documents/documents.html', {})
+    </main>
+    @@include('./html/footer.html', {})
   </div>
   <script src="js/app.min.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,47 @@
+.documents
+  padding: 100px 0px
+  &__title
+    text-align: center
+    margin: 0px 0px 60px 0px
+  &__items
+    display: flex
+    flex-wrap: wrap
+    margin: 0px -10px -20px
+  &__column  
+    flex: 0 1 25%
+    padding: 0px 10px 
+    margin: 0px 0px 20px 0px
+
+.document
+  & > *:last-child
+    margin-bottom: 0
+  &:hover &__image
+      border: 3px solid #E3#c4c4c4
+  &:hover &__download svg path
+      stroke: $blue
+  &__image
+    padding: 0px 0px 112% 0px
+    border: 3px solid #F4F4F4
+    margin: 0px 0px 15px 0px 
+    transition: border 100ms ease
+  &__download
+    position: absolute
+    bottom: 20px
+    right: 20px
+    width: 38px
+    height: 38px
+    border-radius: 50%
+    display: flex
+    justify-content: center
+    align-items: center
+    background: $bgColor
+    svg
+      path 
+        stroke: $black
+        transition: stroke 100ms ease
+  &__name
+    font-family: $helvetica
+    font-weight: 700
+    font-size: 20px
+    line-height: 24 / 20 * 100%
+    color: $gray
