@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -137,7 +138,7 @@
   </div>
 </section>
       <!-- Documents -->
-      <section class="page__documents documents">
+      <section class="page__documents documents section-border">
   <div class="documents__container _container">
     <h2 class="documents__title section-title">Download our documents</h2>
     <div class="documents__items">
@@ -204,9 +205,52 @@
     </div>
   </div>
 </section>
+      <!-- Partners -->
+      <section class="page__partners partners">
+  <div class="partners__container _container">
+    <h2 class="partners__title section-title">
+      Our partners
+    </h2>
+    <div class="partners__body">
+      <div class="partners__slider swiper">
+        <div class="parners__wrapper swiper-wrapper">
+          <div class="swiper-slide partner-slide">
+            <div class="partner__block">
+              <div class="partner__image">
+                <img src="img/partners/rpg.png" alt="partner">
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide partner-slide">
+            <div class="partner__block">
+              <div class="partner__image"><img src="img/partners/grot.png" alt="partner"></div>
+            </div>
+          </div>
+          <div class="swiper-slide partner-slide">
+            <div class="partner__block">
+              <div class="partner__image"><img src="img/partners/comm-bank.png" alt="partner"></div>
+            </div>
+          </div>
+          <div class="swiper-slide partner-slide">
+            <div class="partner__block">
+              <div class="partner__image"><img src="img/partners/omega.png" alt="partner"></div>
+            </div>
+          </div>
+          <div class="swiper-slide partner-slide">
+            <div class="partner__block">
+              <div class="partner__image"><img src="img/partners/asko.png" alt="partner"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     </main>
     <footer class="footer">footer</footer>
   </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="js/app.min.js"></script>
 </body>
 
