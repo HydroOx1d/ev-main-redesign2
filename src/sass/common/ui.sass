@@ -34,3 +34,22 @@
       margin: 0px 6px 0px 0px
   svg
     fill: $blue
+
+
+.logo
+  display: flex
+  align-items: center
+  &__image
+    height: 18px
+    width: 33px
+    &:not(:last-child)
+      margin: 0px 10px 0px 0px
+    &-large
+      width: 60px
+      height: 30px
+  &__text
+    font-family: $satoshi
+    font-weight: 700
+    font-size: 20px
+    line-height: 27 / 20 * 100%
+    color: $blue

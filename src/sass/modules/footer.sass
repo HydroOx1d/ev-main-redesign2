@@ -1,0 +1,84 @@
+.footer
+  background: #F9F9F9
+  padding: 60px 0px 60px 0px
+  &__inner
+    position: relative
+    padding: 40px 0px 40px 0px
+    display: grid
+    grid-template-columns: 2fr 1fr 1fr 1fr
+    &::before, &::after
+      content: ''
+      position: absolute
+      left: 0
+      width: 100%
+      height: 1px
+      background: #E6E6E6
+    &::before
+      top: 0
+    &::after
+      bottom: 0
+  &__risks
+    max-width: 320px
+  &__logo
+    &:not(:last-child)
+      margin: 0px 0px 20px 0px
+  &__text
+    font-family: $helvetica
+    font-weight: 400
+    font-size: 12px
+    line-height: calc(15 / 12 * 100%)
+    color: #7E7E7E
+    &:not(:last-child)
+      margin: 0px 0px 20px 0px
+  &__nav
+    max-width: 150px
+    & > *:not(:last-child)
+      margin: 0px 0px 40px 0px
+    &-list
+      & > *:not(:last-child)
+        margin: 0px 0px 40px 0px
+    &-title
+      font-family: $helvetica
+      font-weight: 700
+      font-size: 14px
+      line-height: calc(16 / 14 * 100%)
+      color: inherit
+    &-link
+      font-family: $helvetica
+      font-weight: 400
+      font-size: 14px
+      line-height: calc(16 / 14 * 100%)
+      color: $gray
+    &-socials
+      margin: -20px 0px 0px 0px
+
+.social
+  display: flex
+  align-items: center
+  & > *:not(:last-child)
+    margin: 0px 16px 0px 0px
+  &__ellipse
+    width: 24px
+    height: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: $bgColor
+  &__icon
+    width: 16px
+    height: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 16px
+      height: 16px
+    svg
+      fill: inherit
+      transition: fill 100ms ease-in-out
+      &:hover
+        fill: $blue
