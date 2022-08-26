@@ -5,18 +5,36 @@
       <div class="logo__text">Envoys Vision</div>
     </div>
     <div class="header__nav nav">
-      <ul class="nav__list">
-        <li class="nav__item @@if(index==1){_is-active}"><a href="#" class="nav__link">Home</a></li>
-        <li class="nav__item @@if(index==2){_is-active}"><a href="#" class="nav__link">Stock Exchange</a></li>
-        <li class="nav__item @@if(index==3){_is-active}"><a href="#" class="nav__link">DEX</a></li>
-        <li class="nav__item @@if(index==4){_is-active}"><a href="#" class="nav__link">Documents</a></li>
-      </ul>
+      <div class="nav__inner">
+        <div class="nav__socials">
+          <div class="nav__socials-item"><a href="" class="nav__socials-link">Instagram</a></div>
+          <div class="nav__socials-item"><a href="" class="nav__socials-link">Facebook</a></div>
+          <div class="nav__socials-item"><a href="" class="nav__socials-link">Twitter</a></div>
+          <div class="nav__socials-item"><a href="" class="nav__socials-link">Linkedin</a></div>
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item @@if(index==1){_is-active}"><a href="#" class="nav__link">Home</a></li>
+          <li class="nav__item @@if(index==2){_is-active}"><a href="#" class="nav__link">Stock Exchange</a></li>
+          <li class="nav__item @@if(index==3){_is-active}"><a href="#" class="nav__link">DEX</a></li>
+          <li class="nav__item @@if(index==4){_is-active}"><a href="#" class="nav__link">Documents</a></li>
+        </ul>
+      </div>
     </div>
     <div class="header__language language">
       <div class="language__current">
         <div class="language__current-icon">@@include('../img/www.svg', {})</div>
         <div class="language__current-name">Ru</div>
         <div class="language__current-arrow">@@include('../img/angle.svg', {})</div>
+      </div>
+      <div class="header__burger">
+        <img src="@img/header/burger.svg" alt="hamburger">
+      </div>
+      <div class="language__dropdown">
+        <ul class="language__dropdown-list">
+          <li class="language__dropdown-item">Russian</li>
+          <li class="language__dropdown-item">Chinese</li>
+          <li class="language__dropdown-item">Kyrgyz</li>
+        </ul>
       </div>
     </div>
   </div>

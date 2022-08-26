@@ -3,27 +3,79 @@
   &__container
     display: flex
     align-items: center
+    @media(max-width: 992px)
+      justify-content: space-between
   &__language
     &:not(:first-child)
       margin: 0px 0px 0px 75px
+      @media(max-width: 992px)
+        margin: 0
   &__nav
     margin: 0px 0px 0px auto
+    @media(max-width: 992px)
+      display: none
+      &._is-active
+        display: block
+        position: fixed
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background: $bgColor
+        z-index: 1
+        padding: 100px 40px 50px
+  &__burger
+    cursor: pointer
+    width: 18px
+    height: 18px
+    @media(min-width: 992px)
+      display: none
 
 .nav
+  &__inner
+    @media(max-width: 992px)
+      display: flex
+      justify-content: space-between
+      height: 100%
+      overflow: auto
+  &__socials
+    display: none
+    @media(max-width: 992px)
+      display: block
+
+      & > *:not(:last-child)
+        margin: 0px 0px 60px 0px
+      &-link
+        font-weight: 400
+        font-size: 14px
+        line-height: calc(16 / 14 * 100%)
   &__list
     list-style: none
     display: flex
     & > *:not(:last-child)
       margin: 0px 60px 0px 0px
+    @media(max-width: 992px)
+      flex-direction: column
+      text-align: end
+      & > *:not(:last-child)
+        margin: 0px 0px 60px 0px
   &__item
-    &._is-active
+    &._is-active a
       border-bottom: 2px solid $orange
   &__link
     font-weight: 400
     font-size: 14px
     line-height: 16 / 14 * 100%
+    @media(max-width: 992px)
+      font-weight: 700
+      font-size: 24px
+      line-height: calc(32 / 24 * 100%)
+      text-transform: uppercase
+    @media(max-width: 576px)
+      font-size: 16px
+
 .language
-  cursor: pointer
+  position: relative
   background-color: $blue
   min-height: 30px
   padding: 0px 21px 0px 17px
@@ -32,9 +84,17 @@
   align-items: center
   justify-content: center
   text-align: center
+  z-index: 2
+  &._is-active
+    border-radius: 20px 20px 0px 0px
+  &._is-active &__dropdown
+    display: block
   &__current
+    cursor: pointer
     display: flex
     align-items: center
+    @media(max-width: 992px)
+      display: none 
     &-icon
       width: 16px
       height: 16px
@@ -49,3 +109,18 @@
     &-arrow
       svg
         fill: #ffffff
+  &__dropdown
+    display: none
+    position: absolute
+    width: 100%
+    right: 0
+    top: 30px
+    background: $blue
+    border-radius: 0px 0px 20px 20px
+    &-list
+      color: #ffffff
+      padding: 20px 0px 20px 0px
+      & > *:not(:last-child)
+        margin: 0px 0px 10px 0px
+    &-item
+      cursor: pointer

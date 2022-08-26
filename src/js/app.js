@@ -1,8 +1,12 @@
 import * as flsFunctions from './modules/functions.js';
 import partnersSlider from './modules/partners.js';
+import languageDropdown from './modules/header.js';
 
 flsFunctions.isWebp()
 
+// header
+
+languageDropdown();
 
 // Partners
 partnersSlider('.partners__slider', {
