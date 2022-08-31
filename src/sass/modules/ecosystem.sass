@@ -1,9 +1,11 @@
 .ecosystem
   padding: 100px 0px
   &__inner
-    max-width: 1135px
+    // max-width: 1135px
     display: flex
     align-items: flex-start
+    @media(max-width: 1160px)
+      flex-direction: column-reverse
   &__image
     flex: 0 0 675px
     padding: 0px 0px 42% 0px
@@ -11,9 +13,18 @@
     border-radius: 4px
     &:not(:last-child) 
       margin: 0px 60px 0px 0px
-  &__content
-    flex: 1 1 auto
+    @media(max-width: 1160px)
+      width: 100%
+      flex: 0 0 100%
+      padding: 0px 0px 42% 0px
+      &:not(:last-child) 
+        margin: 40px 0px 0px 0px
+    @media(max-width: 767px)
+      padding: 0px 0px 90% 0px
 
+  &__content
+    flex: 0 1 400px
+    max-width: 400px
   &__sup-title
     font-weight: 700
     font-size: 16px
@@ -25,6 +36,7 @@
     font-weight: 700
     font-size: 24px
     line-height: 32 / 24 * 100%
+    text-transform: uppercase
     &:not(:last-child)
       margin: 0px 0px 15px 0px
   &__desc
@@ -52,6 +64,8 @@
     color: $gray
     &:not(:last-child)
       margin: 0px 0px 5px 0px
+    @media(max-width: 767px)
+      font-size: 24px
   &__desc
     font-family: $helvetica
     font-weight: 400
